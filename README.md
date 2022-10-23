@@ -1,8 +1,3 @@
-code:
-- energy_based_optimization: Python/Gurobi-Script for Optimization
-- data_visualization: Visualization of results  
-
-
 data:
 - energy.csv
 
