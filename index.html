@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisierung von Zeitreihen und Kapazitätsplanung mit Chart.js und D3.js</title>
+    <!-- insert the Chart.js library to use functions -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.js"></script>
+    <!-- insert the Chart.js annotation plugin to use for annotation lines -->
+    <!-- insert the hammer.js plugin which is needed to use certain zooming functions. this has to come first! it's only needed for the pinch effect on mobile phones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <!-- insert the Chart.js zoom plugin to use for zooming in and out of the chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/1.2.1/chartjs-plugin-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/2.0.1/chartjs-plugin-annotation.min.js"></script>
+    <!-- insert the D3.js library to use functions -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- insert the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <div id="grid">
+        <div id="Chartjs">
+            <canvas id="myChart"></canvas>
+        </div>
+        <!-- load the Chart.js file for time series --> 
+        <script src = "ChartJS.js"></script>
+        
+        <div id = "D3js"></div>
+        <!-- load the d3.js file for time series -->    
+        <script src="D3js.js"></script>
+
+        <div id="Capacity">
+            <canvas id="myCapacity"></canvas>
+        </div>
+        <!-- load the Chart.js file for capacity planning --> 
+        <script src = "ChartJSCapacity.js"></script>
+    </div>  
+
+</body>
+</html>
